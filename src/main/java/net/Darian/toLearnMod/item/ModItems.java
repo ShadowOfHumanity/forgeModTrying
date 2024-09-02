@@ -17,6 +17,13 @@ public class ModItems {
     public static final RegistryObject<Item> PoisonSword = ITEMS.register("poison_sword",
             () -> new Item(new Item.Properties())); // creates a new item and registers it with the deferred register
 
+    public static final RegistryObject<Item> Sapphire = ITEMS.register("sapphire",
+            () -> new Item(new Item.Properties())); // creates a new item and registers it with the deferred register
+
+    public static final RegistryObject<Item> Raw_Sapphire = ITEMS.register("raw_sapphire",
+            () -> new Item(new Item.Properties())); // creates a new item and registers it with the deferred register
+
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

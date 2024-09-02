@@ -1,4 +1,9 @@
 {
   "item.to_learn_mod.fire_sword": "Fire Sword",
-  "item.to_learn_mod.poison_sword": "Poison Sword"
+  "item.to_learn_mod.poison_sword": "Poison Sword",
+  "item.to_learn_mod.sapphire": "Sapphire",
+  "item.to_learn_mod.raw_sapphire": "Raw Sapphire",
+
+  "creativetab.sword_tab" : "Elemental Swords Tab",
+  "creativetab.ingredients_tab" : "Elemental Ingredients Tab"
 }

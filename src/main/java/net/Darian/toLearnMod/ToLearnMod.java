@@ -1,6 +1,7 @@
 package net.Darian.toLearnMod;
 
 import com.mojang.logging.LogUtils;
+import net.Darian.toLearnMod.item.ModCreativeModeTabs;
 import net.Darian.toLearnMod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -26,6 +27,8 @@ public class ToLearnMod
     public ToLearnMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus); //  Register the DeferredRegister with the mod event bus
 
         modEventBus.addListener(this::commonSetup);
@@ -48,7 +51,9 @@ public class ToLearnMod
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.FireSword);
             event.accept(ModItems.PoisonSword);
-
+        } else if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.Sapphire);
+            event.accept(ModItems.Raw_Sapphire);
         }
     }
 
