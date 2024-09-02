@@ -1,6 +1,8 @@
 package net.Darian.toLearnMod;
 
 import com.mojang.logging.LogUtils;
+import net.Darian.toLearnMod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -24,6 +26,7 @@ public class ToLearnMod
     public ToLearnMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModItems.register(modEventBus); //  Register the DeferredRegister with the mod event bus
 
         modEventBus.addListener(this::commonSetup);
 
@@ -41,7 +44,12 @@ public class ToLearnMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        // Add items to creative Mode Tab
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.FireSword);
+            event.accept(ModItems.PoisonSword);
 
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
