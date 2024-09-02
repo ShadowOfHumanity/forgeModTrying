@@ -21,6 +21,7 @@ public class ToLearnMod
     public static final String MOD_ID = "to_learn_mod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+
     public ToLearnMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
