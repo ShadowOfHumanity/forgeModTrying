@@ -5,5 +5,8 @@
   "item.to_learn_mod.raw_sapphire": "Raw Sapphire",
 
   "creativetab.sword_tab" : "Elemental Swords Tab",
-  "creativetab.ingredients_tab" : "Elemental Ingredients Tab"
+  "creativetab.ingredients_tab" : "Elemental Ingredients Tab",
+
+  "block.to_learn_mod.sapphire_block": "Block Of Sapphire",
+  "block.to_learn_mod.raw_sapphire_block": "Block Of Raw Sapphire"
 }

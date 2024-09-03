@@ -1,6 +1,7 @@
 package net.Darian.toLearnMod;
 
 import com.mojang.logging.LogUtils;
+import net.Darian.toLearnMod.block.ModBlocks;
 import net.Darian.toLearnMod.item.ModCreativeModeTabs;
 import net.Darian.toLearnMod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -30,6 +31,8 @@ public class ToLearnMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus); //  Register the DeferredRegister with the mod event bus
+
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

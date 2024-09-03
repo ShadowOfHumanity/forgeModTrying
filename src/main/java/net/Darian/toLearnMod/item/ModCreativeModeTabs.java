@@ -1,6 +1,7 @@
 package net.Darian.toLearnMod.item;
 
 import net.Darian.toLearnMod.ToLearnMod;
+import net.Darian.toLearnMod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -31,6 +32,9 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.Sapphire.get());
                         output.accept(ModItems.Raw_Sapphire.get());
+
+                        output.accept(ModBlocks.Sapphire_Block.get());
+                        output.accept(ModBlocks.Raw_Sapphire_Block.get());
                     })
                     .build());
 
