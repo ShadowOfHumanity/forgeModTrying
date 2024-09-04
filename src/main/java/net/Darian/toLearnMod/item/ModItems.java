@@ -1,6 +1,7 @@
 package net.Darian.toLearnMod.item;
 
 import net.Darian.toLearnMod.ToLearnMod;
+import net.Darian.toLearnMod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SwordItem;
@@ -26,6 +27,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> Raw_Sapphire = ITEMS.register("raw_sapphire",
             () -> new Item(new Item.Properties())); // creates a new item and registers it with the deferred register
+
+    public static final RegistryObject<Item> Metal_Detector = ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(200))); // creates a new item and registers it with the deferred register
 
 
     public static void register(IEventBus eventBus){

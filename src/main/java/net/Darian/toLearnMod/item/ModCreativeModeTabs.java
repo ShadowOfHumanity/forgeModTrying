@@ -25,6 +25,14 @@ public class ModCreativeModeTabs {
                     })
                     .build());
 
+    public static final RegistryObject<CreativeModeTab> ModMisc = CREATIVE_MODE_TABS.register("misc_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Metal_Detector.get())) // the new item stack code is the icon of the creative tab
+                    .title(Component.translatable("creativetab.misc_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.Metal_Detector.get());
+                    })
+                    .build());
+
 
     public static final RegistryObject<CreativeModeTab> ModIngredients = CREATIVE_MODE_TABS.register("ingredients_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Sapphire.get()))

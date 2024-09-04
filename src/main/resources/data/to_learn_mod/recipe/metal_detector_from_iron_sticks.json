@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "/": {
+      "item" : "minecraft:stick"
+    },
+    "#": {
+      "item" : "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "  /",
+    " / ",
+    "## "
+  ],
+  "result": {
+    "id": "to_learn_mod:metal_detector"
+  }
+}
