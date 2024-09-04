@@ -8,5 +8,10 @@
   "creativetab.ingredients_tab" : "Elemental Ingredients Tab",
 
   "block.to_learn_mod.sapphire_block": "Block Of Sapphire",
-  "block.to_learn_mod.raw_sapphire_block": "Block Of Raw Sapphire"
+  "block.to_learn_mod.raw_sapphire_block": "Block Of Raw Sapphire",
+
+  "block.to_learn_mod.raw_sapphire_ore": "Sapphire Ore",
+  "block.to_learn_mod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.to_learn_mod.nether_sapphire_ore": "Scalding Sapphire Ore",
+  "block.to_learn_mod.end_sapphire_ore": "Endstone Sapphire Ore"
 }

@@ -35,6 +35,11 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.Sapphire_Block.get());
                         output.accept(ModBlocks.Raw_Sapphire_Block.get());
+
+                        output.accept(ModBlocks.Raw_Sapphire_Ore.get());
+                        output.accept(ModBlocks.Deepslate_Sapphire_Ore.get());
+                        output.accept(ModBlocks.Nether_Sapphire_Ore.get());
+                        output.accept(ModBlocks.End_Sapphire_Ore.get());
                     })
                     .build());
 

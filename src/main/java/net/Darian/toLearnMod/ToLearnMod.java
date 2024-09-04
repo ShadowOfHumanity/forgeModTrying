@@ -57,6 +57,9 @@ public class ToLearnMod
         } else if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.Sapphire);
             event.accept(ModItems.Raw_Sapphire);
+        } else if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.Sapphire_Block);
+            event.accept(ModBlocks.Raw_Sapphire_Block);
         }
     }
 
