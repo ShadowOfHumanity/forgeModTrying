@@ -1,6 +1,7 @@
 package net.Darian.toLearnMod.item;
 
 import net.Darian.toLearnMod.ToLearnMod;
+import net.Darian.toLearnMod.item.custom.FuelItem;
 import net.Darian.toLearnMod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -30,6 +31,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> Metal_Detector = ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(200))); // creates a new item and registers it with the deferred register
+
+    // creates a new item and registers it AS A FOOD item
+    // creates a new item and registers it AS A FOOD item
+    // creates a new item and registers it AS A FOOD item
+    public static final RegistryObject<Item> Strawberry = ITEMS.register("strawberry",
+            () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY))); // creates a new item and registers it AS A FOOD item
+
+    // -------- SMELTING ITEM --------
+    // -------- SMELTING ITEM --------
+    // -------- SMELTING ITEM --------
+    public static final RegistryObject<Item> Pinecone = ITEMS.register("pinecone", // 10s until burns (burns two items)
+            () -> new FuelItem(new Item.Properties(), 400)); // creates a new item and registers it AS A FUEL OR SMELTING item
 
 
     public static void register(IEventBus eventBus){

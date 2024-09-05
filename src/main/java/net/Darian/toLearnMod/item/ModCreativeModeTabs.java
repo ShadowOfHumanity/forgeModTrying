@@ -41,6 +41,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.Sapphire.get());
                         output.accept(ModItems.Raw_Sapphire.get());
+                        output.accept(ModItems.Pinecone.get());
 
                         output.accept(ModBlocks.Sapphire_Block.get());
                         output.accept(ModBlocks.Raw_Sapphire_Block.get());
@@ -49,6 +50,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.Deepslate_Sapphire_Ore.get());
                         output.accept(ModBlocks.Nether_Sapphire_Ore.get());
                         output.accept(ModBlocks.End_Sapphire_Ore.get());
+
+                    })
+                    .build());
+
+    public static final RegistryObject<CreativeModeTab> ModFood = CREATIVE_MODE_TABS.register("food_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Strawberry.get())) // the new item stack code is the icon of the creative tab
+                    .title(Component.translatable("creativetab.food_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.Strawberry.get());
                     })
                     .build());
 
