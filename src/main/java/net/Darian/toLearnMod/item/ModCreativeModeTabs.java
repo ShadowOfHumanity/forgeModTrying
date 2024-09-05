@@ -2,12 +2,10 @@ package net.Darian.toLearnMod.item;
 
 import net.Darian.toLearnMod.ToLearnMod;
 import net.Darian.toLearnMod.block.ModBlocks;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -62,6 +60,30 @@ public class ModCreativeModeTabs {
                     })
                     .build());
 
+    public static final RegistryObject<CreativeModeTab> ModTab = CREATIVE_MODE_TABS.register("mod_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Sapphire.get())) // the new item stack code is the icon of the creative tab
+                    .title(Component.translatable("creativetab.mod_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.FireSword.get());
+                        output.accept(ModItems.PoisonSword.get());
+
+                        output.accept(ModItems.Sapphire.get());
+                        output.accept(ModItems.Raw_Sapphire.get());
+                        output.accept(ModItems.Pinecone.get());
+                        output.accept(ModItems.Strawberry.get());
+
+                        output.accept(ModItems.Metal_Detector.get());
+                        output.accept(ModBlocks.Sound_Block.get());
+
+                        output.accept(ModBlocks.Sapphire_Block.get());
+                        output.accept(ModBlocks.Raw_Sapphire_Block.get());
+
+                        output.accept(ModBlocks.Raw_Sapphire_Ore.get());
+                        output.accept(ModBlocks.Deepslate_Sapphire_Ore.get());
+                        output.accept(ModBlocks.Nether_Sapphire_Ore.get());
+                        output.accept(ModBlocks.End_Sapphire_Ore.get());
+                    })
+                    .build());
 
 
 
