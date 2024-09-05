@@ -29,7 +29,6 @@ public class SoundBlock extends Block {
         Random random = new Random();
         int randomIndex = random.nextInt(sounds.size()-1);
 
-
         pLevel.playSound(pPlayer, pPos,sounds.get(randomIndex), SoundSource.BLOCKS, 1f, 1f);
 
         return InteractionResult.SUCCESS;
