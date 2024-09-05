@@ -60,6 +60,7 @@ public class ToLearnMod
         } else if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.Sapphire_Block);
             event.accept(ModBlocks.Raw_Sapphire_Block);
+            event.accept(ModBlocks.Sound_Block);
         } else if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.Metal_Detector);
         }

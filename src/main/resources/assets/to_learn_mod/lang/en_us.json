@@ -5,6 +5,7 @@
   "item.to_learn_mod.raw_sapphire": "Raw Sapphire",
   "item.to_learn_mod.metal_detector": "Weak Metal Detector",
 
+
   "creativetab.sword_tab" : "Elemental Swords Tab",
   "creativetab.misc_tab" : "Misc Elemental Items",
   "creativetab.ingredients_tab" : "Elemental Ingredients Tab",
@@ -15,5 +16,6 @@
   "block.to_learn_mod.raw_sapphire_ore": "Sapphire Ore",
   "block.to_learn_mod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
   "block.to_learn_mod.nether_sapphire_ore": "Scalding Sapphire Ore",
-  "block.to_learn_mod.end_sapphire_ore": "Endstone Sapphire Ore"
+  "block.to_learn_mod.end_sapphire_ore": "Endstone Sapphire Ore",
+  "block.to_learn_mod.sound_block": "Strange Sound Block"
 }

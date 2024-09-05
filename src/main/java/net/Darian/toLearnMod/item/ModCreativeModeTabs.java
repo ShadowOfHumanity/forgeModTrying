@@ -30,6 +30,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.misc_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.Metal_Detector.get());
+                        output.accept(ModBlocks.Sound_Block.get());
                     })
                     .build());
 

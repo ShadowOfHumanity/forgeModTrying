@@ -1,6 +1,7 @@
 package net.Darian.toLearnMod.block;
 
 import net.Darian.toLearnMod.ToLearnMod;
+import net.Darian.toLearnMod.block.custom.SoundBlock;
 import net.Darian.toLearnMod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -46,6 +47,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> End_Sapphire_Ore = registerBlock("end_sapphire_ore",
             () -> new DropExperienceBlock(UniformInt.of(6, 11),BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE_BRICKS)
                     .requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> Sound_Block = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock( String name, Supplier<T> block) {
