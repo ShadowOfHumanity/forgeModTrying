@@ -21,5 +21,8 @@
   "block.to_learn_mod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
   "block.to_learn_mod.nether_sapphire_ore": "Scalding Sapphire Ore",
   "block.to_learn_mod.end_sapphire_ore": "Endstone Sapphire Ore",
-  "block.to_learn_mod.sound_block": "Strange Sound Block"
+  "block.to_learn_mod.sound_block": "Strange Sound Block",
+
+  "to_learn_mod.metal_detector.tooltip": "Helps you find §a§lvaluables!§l§a",
+  "to_learn_mod.sound_block.tooltip": "This block sounds §4§kstrange§k§4."
 }
